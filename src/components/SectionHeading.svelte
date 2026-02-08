@@ -22,7 +22,7 @@
 	{#if subtitle}
 		<span
 			class={`text-sm font-medium uppercase tracking-[0.2em] ${
-				light ? 'text-white/80' : 'text-terracotta'
+				light ? 'text-black/80' : 'text-terracotta'
 			}`}
 			in:fade={{ duration: 600 }}
 			out:fade
@@ -32,12 +32,11 @@
 	{/if}
 	<h2
 		class={`text-3xl font-display font-medium leading-tight md:text-5xl lg:text-6xl ${
-			light ? 'text-white' : 'text-foreground'
+			light ? 'text-black' : 'text-black'
 		}`}
 		in:fade={{ duration: 600, delay: 100 }}
 		out:fade
 	>
 		{@render children?.()}
 	</h2>
-	<div class={`mt-2 h-1 w-24 rounded-full ${light ? 'bg-white/30' : 'bg-terracotta/20'}`} />
 </div>

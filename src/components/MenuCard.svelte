@@ -52,10 +52,6 @@
 			{menu.description}
 		</p>
 
-		<div class="mt-6 border-t border-border pt-6">
-			<button class="text-sm font-semibold uppercase tracking-widest text-terracotta transition-colors group-hover:text-foreground">
-				Explore Menu
-			</button>
-		</div>
+
 	</div>
 </div>

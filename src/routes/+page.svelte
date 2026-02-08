@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	import Navbar from '$components/Navbar.svelte';
 	import SectionHeading from '$components/SectionHeading.svelte';
 	import MenuCard from '$components/MenuCard.svelte';
 	import content from '$lib/data/content.json';
@@ -49,8 +48,7 @@
 	<title>Atelier Tavola Viva - Art & Gastronomy</title>
 </svelte:head>
 
-<div class="min-h-screen font-sans bg-background selection:bg-terracotta/30">
-	<Navbar />
+<div class="min-h-screen font-sans selection:bg-terracotta/30">
 
 	<!-- ===== HERO SECTION ===== -->
 	<section class="relative flex min-h-[800px] items-center justify-center overflow-hidden h-screen">
@@ -228,13 +226,14 @@
 	</section>
 
 	<!-- ===== WORKSHOPS SECTION ===== -->
-	<section id="workshops" class="relative overflow-hidden bg-foreground py-24 text-white md:py-32">
+	<section id="workshops" class="relative overflow-hidden py-24 md:py-32">
 		<div class="absolute inset-0">
 			<img
-				src={workshopImg}
+				src={impactImg}
 				alt="Artistic textures representing the creative workshop environment"
 				class="h-full w-full object-cover"
 			/>
+			<div class="absolute inset-0 bg-black/60" />
 		</div>
 
 		<div class="container relative z-10 mx-auto px-4">
@@ -243,20 +242,20 @@
 					{content.workshops.title}
 				</SectionHeading>
 
-				<p class="mb-12 text-xl font-light leading-relaxed text-white/80 md:text-2xl">
+				<p class="mb-12 text-xl leading-relaxed text-black/90 md:text-2xl">
 					{content.workshops.description}
 				</p>
 
 				<div class="mx-auto max-w-3xl grid grid-cols-1 gap-8 text-left sm:grid-cols-2">
 					{#each content.workshops.types as type}
-						<div class="rounded-2xl border border-white/10 bg-white/5 p-8 transition-colors hover:bg-white/10 backdrop-blur-sm">
+						<div class="rounded-2xl border border-white/10 bg-white p-8 transition-colors hover:bg-white/95 backdrop-blur-sm text-black">
 							<div
-								class="mb-6 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 font-display text-xs uppercase tracking-tighter"
+								class="mb-6 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white text-black font-display text-xs uppercase tracking-tighter"
 							>
 								{type.acronym}
 							</div>
-							<h3 class="mb-3 font-display text-2xl">{type.heading}</h3>
-							<p class="font-light text-white/60">
+							<h3 class="mb-3 font-display text-2xl text-black">{type.heading}</h3>
+							<p class="font-light text-black/80">
 								{type.description}
 							</p>
 						</div>
@@ -301,74 +300,6 @@
 					</div>
 				</div>
 
-				<!-- Contact Form -->
-				<div class="rounded-3xl border border-border bg-white p-8 shadow-xl shadow-terracotta/5 md:p-10">
-					<form on:submit|preventDefault={handleSubmit} class="space-y-6">
-						<!-- Name -->
-						<div class="space-y-2">
-							<label for="name" class="text-sm font-medium">Name</label>
-							<input
-								id="name"
-								type="text"
-								bind:value={formData.name}
-								placeholder="Your name"
-								required
-								class="h-12 w-full rounded-xl border border-border/50 bg-muted/30 px-4 py-3 focus:border-terracotta focus:outline-none focus:ring-1 focus:ring-terracotta/20"
-							/>
-						</div>
-
-						<!-- Email -->
-						<div class="space-y-2">
-							<label for="email" class="text-sm font-medium">Email</label>
-							<input
-								id="email"
-								type="email"
-								bind:value={formData.email}
-								placeholder="your@email.com"
-								required
-								class="h-12 w-full rounded-xl border border-border/50 bg-muted/30 px-4 py-3 focus:border-terracotta focus:outline-none focus:ring-1 focus:ring-terracotta/20"
-							/>
-						</div>
-
-						<!-- Subject/Interest -->
-						<div class="space-y-2">
-							<label for="subject" class="text-sm font-medium">Interest</label>
-							<select
-								id="subject"
-								bind:value={formData.subject}
-								required
-								class="h-12 w-full rounded-xl border border-border/50 bg-muted/30 px-4 py-3 focus:border-terracotta focus:outline-none focus:ring-1 focus:ring-terracotta/20"
-							>
-								<option value="">What are you interested in?</option>
-								{#each content.contact.formOptions as option}
-									<option value={option}>{option}</option>
-								{/each}
-							</select>
-						</div>
-
-						<!-- Message -->
-						<div class="space-y-2">
-							<label for="message" class="text-sm font-medium">Message</label>
-							<textarea
-								id="message"
-								bind:value={formData.message}
-								placeholder="Tell me about your event or idea..."
-								rows="4"
-								required
-								class="w-full resize-none rounded-xl border border-border/50 bg-muted/30 px-4 py-3 focus:border-terracotta focus:outline-none focus:ring-1 focus:ring-terracotta/20"
-							></textarea>
-						</div>
-
-						<!-- Submit Button -->
-						<button
-							type="submit"
-							disabled={isSubmitting}
-							class="h-14 w-full rounded-xl bg-terracotta px-6 py-3 text-lg font-medium text-white shadow-lg shadow-terracotta/25 transition-all hover:-translate-y-0.5 hover:bg-terracotta/90 disabled:opacity-50"
-						>
-							{isSubmitting ? 'Sending...' : 'Send Message'}
-						</button>
-					</form>
-				</div>
 			</div>
 		</div>
 	</section>
