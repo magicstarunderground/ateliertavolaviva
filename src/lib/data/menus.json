@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Healthy Anti-inflammatory",
+    "description": "A restorative menu focused on gut health and reducing inflammation, featuring vibrant vegetables, omega-3 rich ingredients, and healing spices.",
+    "category": "Menu Option 1",
+    "imageUrl": ""
+  },
+  {
+    "id": 2,
+    "title": "Creative Aperitif",
+    "description": "An artistic selection of small bites designed to spark conversation. Unexpected pairings, textures, and visual delight in every piece.",
+    "category": "Menu Option 2",
+    "imageUrl": ""
+  },
+  {
+    "id": 3,
+    "title": "Finger Foods",
+    "description": "Elegant, easy-to-eat creations perfect for mingling. A journey of flavors that fits in the palm of your hand without compromising on sophistication.",
+    "category": "Menu Option 3",
+    "imageUrl": ""
+  },
+  {
+    "id": 4,
+    "title": "Local Classics with a Twist",
+    "description": "Honoring traditional recipes while reinventing them with modern techniques and artistic presentation. Nostalgia meets innovation.",
+    "category": "Menu Option 4",
+    "imageUrl": ""
+  }
+]

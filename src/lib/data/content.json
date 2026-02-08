@@ -1,0 +1,116 @@
+{
+  "hero": {
+    "subtitle": "Art & Gastronomy",
+    "title": "Connecting on the Tavola Viva",
+    "titleItalic": "Tavola Viva",
+    "description": "A private chef service and workshop platform focused on physical and mental well-being through the synergy of visual arts and cooking."
+  },
+  "story": {
+    "subtitle": "The Artist",
+    "title": "Alma: From Patagonia to the World",
+    "paragraphs": [
+      "Born amidst the rugged winds and vast landscapes of Argentine Patagonia, my journey began with a deep appreciation for nature's raw beauty. I graduated in Visual Arts from the Universidad Nacional de Córdoba (UNC), a foundation that has traveled with me across oceans and cultures.",
+      "My path led me to Ireland's green hills, Amsterdam's artistic canals, and finally to Italy's culinary heart. Each place added a layer to my identity as a visual artist and chef, complemented by my certification in Art Therapy and rigorous HACCP food safety standards.",
+      "With years of experience in gastronomy, photography, and illustration, I weave these disciplines together. My food is not just eaten; it is experienced visually and emotionally, creating a bridge between the plate and the soul."
+    ],
+    "stats": [
+      {
+        "value": "15+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "4",
+        "label": "Countries Lived"
+      }
+    ]
+  },
+  "impact": {
+    "subtitle": "Philosophy",
+    "title": "Nourishing Body & Soul",
+    "mainContent": {
+      "heading": "The Synergy of Art & Goodness",
+      "paragraphs": [
+        "I believe that true well-being comes from a holistic balance. There is a profound connection between what we see, what we eat, and how we feel.",
+        "Art stimulates the mind, nutrition fuels the body, and connection nourishes the spirit.",
+        "By integrating visual arts with conscious gastronomy, we create a sanctuary for the senses. This synergy forms the foundation for balanced well-being, inviting you to slow down, appreciate beauty in the details, and reconnect with yourself and others in a meaningful way."
+      ]
+    },
+    "sustainability": {
+      "heading": "Sustainability",
+      "description": "Every choice we make in the kitchen is an opportunity to care for the planet. From sourcing to serving, sustainability guides our practice.",
+      "items": [
+        {
+          "heading": "Local & Seasonal",
+          "description": "Sourcing ingredients from local farmers and producers, respecting the natural rhythm of the seasons."
+        },
+        {
+          "heading": "Zero Waste",
+          "description": "Minimizing waste through thoughtful planning, composting, and creative use of every ingredient."
+        },
+        {
+          "heading": "Conscious Choices",
+          "description": "Prioritizing organic, ethically-sourced products that honor both the earth and the people who cultivate it."
+        }
+      ]
+    }
+  },
+  "workshops": {
+    "subtitle": "Experiences",
+    "title": "Creative Workshops",
+    "description": "Immerse yourself in a hands-on exploration of creativity. Our workshops blend visual arts techniques with culinary skills, teaching you to see ingredients as a palette and the plate as a canvas.",
+    "types": [
+      {
+        "acronym": "VA",
+        "heading": "Visual Arts",
+        "description": "Explore illustration, photography, and composition. Learn to capture the essence of nature and translate it into visual storytelling."
+      },
+      {
+        "acronym": "CC",
+        "heading": "Conscious Cooking",
+        "description": "Master techniques that honor ingredients. Focus on flavors, textures, and the healing properties of food."
+      }
+    ]
+  },
+  "contact": {
+    "subtitle": "Get in Touch",
+    "title": "Let's Create Together",
+    "description": "Whether you're looking for a private chef for an intimate gathering or want to join a creative workshop, I'd love to hear from you.",
+    "email": "ateliertavolaviva@gmail.com",
+    "location": "Italy / Available Worldwide",
+    "formOptions": [
+      "Workshops",
+      "Private Dining",
+      "Collaboration",
+      "Other"
+    ]
+  },
+  "footer": {
+    "partners": [
+      {
+        "name": "Airbnb Experiences",
+        "description": "Book our workshop",
+        "url": "https://www.airbnb.co.uk/hosting/listings/experience/6890511/details"
+      },
+      {
+        "name": "Private Chef",
+        "description": "Professional Manager",
+        "url": "https://www.privatechefmanager.com/"
+      },
+      {
+        "name": "WhatsApp",
+        "description": "Join Our Community",
+        "url": "https://chat.whatsapp.com/B7SaAXTft6CE4wHZfUGVfr"
+      }
+    ],
+    "social": [
+      {
+        "name": "Instagram",
+        "url": "#"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "#"
+      }
+    ]
+  }
+}
