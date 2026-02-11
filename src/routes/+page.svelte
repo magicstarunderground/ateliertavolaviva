@@ -16,6 +16,8 @@
 	import menu3Img from '$lib/assets/cuadrados_1768838009904.webp';
 	import menu4Img from '$lib/assets/plato_1768838009912.webp';
 
+	// Metadata for SEO and social sharing
+
 </script>
 
 <svelte:head>
